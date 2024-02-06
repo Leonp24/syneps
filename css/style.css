@@ -63,7 +63,7 @@
     margin-top: 10px;
 }
 #why .card2 {
-    text-align: start;
+    text-align: justify;
     padding: 20px;
     border: none;
     margin-top: 10px;
@@ -73,7 +73,6 @@
     width: 50px;
     margin: auto;
     padding-bottom: 20px;
-    
 }
 /* home-why */
 
