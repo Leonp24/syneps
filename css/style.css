@@ -120,6 +120,12 @@
 #kelas .cost {
     margin-top: -10px;
 }
+#kelas .card .hapus{
+    color: #D35F5F;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
 /* home-kelas */
 
 /* home-testi */
@@ -207,5 +213,8 @@ footer a:hover {
 }
 footer .kelas-foot {
     margin-left: 10%;
+}
+#footer-page{
+    margin-top: 50vh;
 }
 /* footer */
