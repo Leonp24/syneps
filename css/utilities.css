@@ -84,4 +84,19 @@ span {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+.teks-link {
+    text-decoration: none;
+    color: #2ECC71;
+    font-size: 14px;
+}
+.teks-link:hover {
+    color: #2ECC71;
+    text-decoration: underline;
+}
+label {
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
 /* utilities */
