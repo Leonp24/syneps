@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
   <!-- bootstrap css & js -->
   <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
   <script src="./js/bootstrap.bundle.js"></script>
+  <script src="./js/navbar.js"></script>
 
   <!-- css -->
   <link rel="stylesheet" href="./css/style.css">
@@ -20,12 +22,14 @@
   <!-- Load Swiper CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
+
 <body>
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg bg-white fixed-top">
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
     <div class="container">
       <a class="navbar-brand" href="./index.html"><img src="./assets/logo.png" alt="logo"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -37,10 +41,10 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="./kelasPage.html"><b>Semua Kelas</b></a></li>
               <hr>
-              <li><a class="dropdown-item" href="./categoryPage.html">UI/UX Design</a></li>
-              <li><a class="dropdown-item" href="./categoryPage.html">Web Development</a></li>
-              <li><a class="dropdown-item" href="./categoryPage.html">Android Development</a></li>
-              <li><a class="dropdown-item" href="./categoryPage.html">Bahasa Asing</a></li>
+              <li><a class="dropdown-item" href="./kategoriPage.html">UI/UX Design</a></li>
+              <li><a class="dropdown-item" href="./kategoriPage.html">Web Development</a></li>
+              <li><a class="dropdown-item" href="./kategoriPage.html">Android Development</a></li>
+              <li><a class="dropdown-item" href="./kategoriPage.html">Bahasa Asing</a></li>
             </ul>
           </div>
           <a class="nav-link" href="./certificationPage.html">Certification</a>
@@ -55,75 +59,65 @@
   </nav>
   <!-- navbar -->
 
-  <!-- kelas -->
-  <section id="kelas">
+  <!-- keranjang-->
+  <section id="keranjang">
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <h3>Keranjang</h3>
-            </div>
+      <div class="row">
+        <div class="col">
+          <h3>Keranjang</h3>
         </div>
-        <div class="row">
-            <!-- Tampilan untuk tampilan mobile menggunakan Swiper -->
-            <div class="col-lg-12 d-lg-none">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <img src="./assets/uidesign1.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">UI Design Fundamental</h5>
-                                    <p class="card-text text-secondary">Masa : 6 Bulan | Weekend</p>
-                                    <h5 class="cost">IDR 500.000</h5>
-                                    <a href="./detailPage.html" class="btn btn-utama w-100">Check Out</a>
-                                </div>
-                                <a class="hapus" href="#">Hapus</a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="card">
-                                <img src="./assets/uidesign2.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">UX Design Fundamental</h5>
-                                    <p class="card-text text-secondary">Masa : 6 Bulan | Weekend</p>
-                                    <h5 class="cost">IDR 500.000</h5>
-                                    <a href="./detailPage.html" class="btn btn-utama w-100">Check Out</a>
-                                </div>
-                                <a class="hapus" href="#">Hapus</a>
-                            </div>
-                        </div>
-                    </div> 
-                </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-lg-3">
+          <div class="card">
+            <img src="./assets/uidesign1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">UI Design Fundamental</h5>
+              <p class="card-text text-secondary">Masa : 6 Bulan | Weekend</p>
+              <h5 class="cost">IDR 500.000</h5>
+              <a href="./bayarPage.html" class="btn btn-utama w-100 mt-3">Check Out</a>
+
+              <!-- trigger modal -->
+              <p class="sub text-danger text-center mt-3" data-bs-toggle="modal" data-bs-target="#hapusModal">
+                Hapus
+              </p>
             </div>
-            <!-- Tampilkan kartu secara biasa pada tampilan desktop -->
-            <div class="col-lg-3 d-none d-lg-block">
-                <div class="card">
-                    <img src="./assets/uidesign1.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">UI Design Fundamental</h5>
-                        <p class="card-text text-secondary">Masa : 6 Bulan | Weekend</p>
-                        <h5 class="cost">IDR 500.000</h5>
-                        <a href="./detailPage.html" class="btn btn-utama w-100">Check Out</a>
-                    </div>
-                    <a class="hapus" href="#">Hapus</a>
-                </div>
-            </div>
-            <div class="col-lg-3 d-none d-lg-block">
-                <div class="card">
-                    <img src="./assets/uidesign2.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">UX Design Fundamental</h5>
-                        <p class="card-text text-secondary">Masa : 6 Bulan | Weekend</p>
-                        <h5 class="cost">IDR 500.000</h5>
-                        <a href="./detailPage.html" class="btn btn-utama w-100">Check Out</a>
-                    </div>
-                    <a class="hapus" href="#">Hapus</a>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="col-lg-3">
+          <div class="card">
+            <img src="./assets/uidesign2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">UX Design Fundamental</h5>
+              <p class="card-text text-secondary">Masa : 6 Bulan | Weekend</p>
+              <h5 class="cost">IDR 500.000</h5>
+              <a href="./bayarPage.html" class="btn btn-utama w-100 mt-3">Check Out</a>
+              <!-- trigger modal -->
+              <p class="sub text-danger text-center mt-3" data-bs-toggle="modal" data-bs-target="#hapusModal">
+                Hapus
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="hapusModal" tabindex="-1" aria-labelledby="hapusModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h5>Yakin ingin menghapus item?</h5>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn sub text-danger">Yakin</button>
+            <button type="button" class="btn btn-utama" data-bs-dismiss="modal">Batal</button>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <!-- kelas -->
+  <!-- keranjang-->
 
 
   <!-- footer -->
@@ -133,9 +127,12 @@
         <div class="col-lg-3">
           <img src="./assets/logo.png" alt="">
           <p class="sub">Belajar Skill Digital Online Bersertifikat</p>
-          <a href="wa.me/6289633798626" target="_blank"><i class="fa-brands fa-square-whatsapp"></i>  (62) 896 3379 8626</a>
-          <a href="#" target="_blank"><i class="fa-solid fa-envelope"></i>  cs@sydemy.com</a>
-          <a href="https://maps.app.goo.gl/p5BFi3kNApcwSbJc9" target="_blank"><i class="fa-solid fa-location-dot"></i>  Komplek Rajawali Village, Jl. Rajawali No.1228, 9 Ilir, Ilir Timur II, Kota Palembang, Sumatera Selatan 30114</a>
+          <a href="wa.me/6289633798626" target="_blank"><i class="fa-brands fa-square-whatsapp"></i> (62) 896 3379
+            8626</a>
+          <a href="#" target="_blank"><i class="fa-solid fa-envelope"></i> cs@sydemy.com</a>
+          <a href="https://maps.app.goo.gl/p5BFi3kNApcwSbJc9" target="_blank"><i class="fa-solid fa-location-dot"></i>
+            Komplek Rajawali Village, Jl. Rajawali No.1228, 9 Ilir, Ilir Timur II, Kota Palembang, Sumatera Selatan
+            30114</a>
         </div>
         <div class="col-lg-3">
           <div class="kelas-foot">
@@ -172,16 +169,17 @@
   <script>
     // Inisialisasi Swiper
     var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 'auto', // Menampilkan jumlah slide sesuai lebar layar
-        spaceBetween: 3, // Jarak antar slide (dalam pixel)
-        grabCursor: true, // Mengubah kursor menjadi tangan saat di atas slide
-        loop: true, // Mengaktifkan looping carousel
-        pagination: {
-            el: '.swiper-pagination', // Selector untuk elemen pagination
-            clickable: true, // Mengaktifkan navigasi klik pada pagination
-        }
+      slidesPerView: 'auto', // Menampilkan jumlah slide sesuai lebar layar
+      spaceBetween: 3, // Jarak antar slide (dalam pixel)
+      grabCursor: true, // Mengubah kursor menjadi tangan saat di atas slide
+      loop: true, // Mengaktifkan looping carousel
+      pagination: {
+        el: '.swiper-pagination', // Selector untuk elemen pagination
+        clickable: true, // Mengaktifkan navigasi klik pada pagination
+      }
     });
   </script>
 
 </body>
+
 </html>

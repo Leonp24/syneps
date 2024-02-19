@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Masuk</title>
+    <title>Check Out Kelas</title>
 
     <!-- bootstrap css & js -->
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
@@ -53,59 +53,64 @@
                     <a class="nav-link" href="./faqPage.html">FaQ</a>
                     <div class="vr"></div>
                     <a class="nav-link" href="./cartPage.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                    <a class="btn btn-utama" href="./masukPage.html">Masuk</a>
-                    <a class="btn btn-outline-utama" href="./daftarPage.html">Daftar</a>
+                    <a class="nav-link" href="#">Profil</a>
                 </div>
             </div>
         </div>
     </nav>
     <!-- navbar -->
 
-    <!-- daftar -->
-    <section id="daftar">
+    <!-- bayar -->
+    <section id="bayar">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
-                    <h1>Daftar</h1>
-                    <p>Daftarkan dirimu & tingkatkan kemampuanmu bersama kami.</p>
+                <div class="col-lg-9">
+                    <h3>Detail Pembayaran</h3>
+                    <h6>Informasi Saya</h6>
 
                     <form action="">
-                        <label>Nama Lengkap</label>
-                        <input type="text" class="form-control" placeholder="Masukkan Nama Lengkap" required>
-                        <label>Nomor Telepon</label>
-                        <input type="text" class="form-control" placeholder="Masukkan Nomor Telepon" required>
-                        <label>Email</label>
-                        <input type="email" class="form-control" placeholder="Masukkan Email" required>
-                        <label>Buat Password</label>
-                        <input type="password" class="form-control" placeholder="Masukkan Password" required>
-                        <button type="submit" class="btn btn-utama w-100 mt-5">Daftar</button>
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" placeholder="Masukkan Email">
+                        <label for="nomor-telepon">Nomor Telepon/Whatsapp</label>
+                        <input type="text" class="form-control" placeholder="Masukkan Nomor Telepon">
                     </form>
 
-                    <p class="mt-5">Sudah punya akun? <a href="./masukPage.html" class="teks-link">Masuk</a> </p>
-                </div>
-                <div class="col-lg-8">
-                    <div class="img-form">
-                        <img src="./assets/img-cta.png" alt="">
+                    <h6>Pembayaran</h6>
+                    <div class="card-body">
+                        <form action="">
+                            <p class="sub">Sistem Bayar</p>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="lunas" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1">Bayar Lunas</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="angsuran" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Angsuran</label>
+                              </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- daftar -->
+    <!-- bayar -->
 
     <!-- footer -->
-    <footer>
+    <footer id="footer-page">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
                     <img src="./assets/logo.png" alt="">
                     <p class="sub">Belajar Skill Digital Online Bersertifikat</p>
                     <a href="wa.me/6289633798626" target="_blank"><i class="fa-brands fa-square-whatsapp"></i> (62) 896
-                        3379 8626</a>
+                        3379
+                        8626</a>
                     <a href="#" target="_blank"><i class="fa-solid fa-envelope"></i> cs@sydemy.com</a>
                     <a href="https://maps.app.goo.gl/p5BFi3kNApcwSbJc9" target="_blank"><i
-                            class="fa-solid fa-location-dot"></i> Komplek Rajawali Village, Jl. Rajawali No.1228, 9
-                        Ilir, Ilir Timur II, Kota Palembang, Sumatera Selatan 30114</a>
+                            class="fa-solid fa-location-dot"></i>
+                        Komplek Rajawali Village, Jl. Rajawali No.1228, 9 Ilir, Ilir Timur II, Kota Palembang, Sumatera
+                        Selatan
+                        30114</a>
                 </div>
                 <div class="col-lg-3">
                     <div class="kelas-foot">
