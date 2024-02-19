@@ -35,6 +35,14 @@
     font-size: 14px;
 }
 
+.navbar {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.50) 100%);
+}
+
 /* navbar */
 
 /* home-hero */
@@ -120,41 +128,10 @@
 #kelas .cost {
     margin-top: -10px;
 }
-#kelas .card .hapus{
-    color: #D35F5F;
-    text-align: center;
-    text-decoration: none;
-    margin-bottom: 10px;
-}
 #kelas .card .card-body a{
     text-decoration: none;
     text-align: center;
 }
-#kelas .card .card-body .log{
-    color: #D35F5F;
-}
-#kelas .card .card-body .clear{
-    color: #2ECC71;
-}
-#kelas .card .card-body .proses{
-    color:  #ffd700;
-}
-#kelas .card .card-body .lunas{
-    color: #2ECC71;
-
-}
-#kelas .card .card-body .later{
-    color: #ffd700;
-}
-#kelas .card .edit{
-    margin-top: 40vh;
-}
-
-
-
-
-
-
 /* home-kelas */
 
 /* home-testi */
@@ -200,6 +177,30 @@
 }
 /* about artikel */
 
+/* keranjang */
+#keranjang {
+    margin-top: 100px;
+}
+#keranjang .sub {
+    cursor: pointer;
+}
+#keranjang .card {
+    border-radius: 10px;
+}
+#keranjang .modal-footer {
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+#keranjang .modal-footer .btn {
+    width: 120px;
+    margin: 10px;
+}
+#keranjang .modal-footer .sub:hover {
+    border: 1px solid red;
+}
+/* keranjang */
+
 /* login */
 #login {
     margin-top: 150px;
@@ -231,6 +232,43 @@
 
 /* daftar */
 
+/* bayar */
+#bayar {
+    margin-top: 100px;
+}
+/* bayar */
+
+/* detail */
+#detail {
+    margin-top: 100px;
+}
+#detail p {
+    text-align: justify;
+}
+#detail .fixed-side {
+    position: fixed;
+    width: 200px;
+}
+#detail .fixed-side {
+    text-align: center;
+    overflow-y: auto    ;
+}
+#detail .sidebar .sidebar-menu {
+    display: block;
+    text-decoration: none;
+    color: #0E2D41;
+    margin: 10px;
+}
+#detail .sidebar-menu.active {
+    text-decoration: none;
+    background-color: #2ECC71;
+    width: auto;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+/* detail */
+
 /* cta */
 #cta {
     margin-top: 100px;
@@ -239,7 +277,7 @@
     width: 100%;
 }
 #cta h1 {
-    padding-top: 25%;
+    padding-top: 20%;
 }
 #cta .btn {
     width: 130px;

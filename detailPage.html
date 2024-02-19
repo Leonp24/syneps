@@ -9,6 +9,7 @@
     <!-- bootstrap css & js -->
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
     <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/navbar.js"></script>
 
     <!-- css -->
     <link rel="stylesheet" href="./css/style.css">
@@ -24,7 +25,7 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="./index.html"><img src="./assets/logo.png" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -41,10 +42,10 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="./kelasPage.html"><b>Semua Kelas</b></a></li>
                             <hr>
-                            <li><a class="dropdown-item" href="./categoryPage.html">UI/UX Design</a></li>
-                            <li><a class="dropdown-item" href="./categoryPage.html">Web Development</a></li>
-                            <li><a class="dropdown-item" href="./categoryPage.html">Android Development</a></li>
-                            <li><a class="dropdown-item" href="./categoryPage.html">Bahasa Asing</a></li>
+                            <li><a class="dropdown-item" href="./kategoriPage.html">UI/UX Design</a></li>
+                            <li><a class="dropdown-item" href="./kategoriPage.html">Web Development</a></li>
+                            <li><a class="dropdown-item" href="./kategoriPage.html">Android Development</a></li>
+                            <li><a class="dropdown-item" href="./kategoriPage.html">Bahasa Asing</a></li>
                         </ul>
                     </div>
                     <a class="nav-link" href="./certificationPage.html">Certification</a>
@@ -60,76 +61,37 @@
     <!-- navbar -->
 
 
-    <!-- profil -->
-    <section id="kelas">
+    <!-- detail -->
+    <section id="detail">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h1>Profil</h1>
+                    <h3>Detail Kelas</h3>
                 </div>
             </div>
-            <div class="row">
-                <!-- Tampilan untuk tampilan mobile menggunakan Swiper -->
-                <div class="col-lg-12 d-lg-none">
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img src="./assets/bahasa.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">English Class Beginner</h5>
-                                        <p><i class="fas fa-check-circle" style="color: #2ecc71;"></i></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img src="./assets/uidesign1.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">UI Design Fundamental</h5>
-                                        <p><i class="fas fa-check-circle" style="color: #2ecc71;"></i></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card">
-                                    <img src="./assets/programming.png" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Fullstack Web Developer</h5>
-                                        <p><i class="fas fa-dot-circle" style="color: #ffd700;"></i></i> Dalam Proses
-                                            Belajar</p>
-                                    </div>
-                                </div>
+            <div class="row mt-3">
+                <div class="col-lg-2">
+                    <div class="card fixed-side d-none d-lg-block">
+                        <div class="sidebar">
+                            <div class="card-body">
+                                <a class="sidebar-menu active" href="#detail-kelas">Detail Kelas</a>
+                                <a class="sidebar-menu" href="#silabus">Silabus</a>
+                                <a class="sidebar-menu" href="#biaya">Biaya</a>
+                                <a class="sidebar-menu" href="#jadwal">Jadwal</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Tampilkan kartu secara biasa pada tampilan desktop -->
-                <div class="col-lg-2 d-none d-lg-block">
-                    <div class="card pt-3">
-                        <div class="card-body">
-                            <a href="#" class="btn btn-utama w-100 mb-3">Detail Kelas</a>
-                            <a href="#">
-                                <p>Silabus</p>
-                            </a>
-                            <a href="#">
-                                <p>Biaya</p>
-                            </a>
-                            <a href="#">
-                                <p>Jadwal</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-10 d-none d-lg-block">
-                        <div class="card-body">
+                <div class="col-lg-10">
+                    <div class="card-body">
+                        <div id="detail-kelas">
                             <div class="row">
                                 <h6>UI/UX</h6>
                                 <div class="col-lg-10">
                                     <h1 class="card-title">UI Design Fundamental</h1>
                                 </div>
                                 <div class="col">
-                                    <a href="#" class="btn btn-utama w-100">+ Keranjang</a>
+                                    <a href="./cartPage.html" class="btn btn-utama w-100">+ Keranjang</a>
                                 </div>
                             </div>
                             <div class="mt-3">
@@ -138,6 +100,8 @@
                                     menjadi solusi yang dapat dieksekusi. Materi yang akan dipelajari di modul ini
                                     mencakup:</p>
                             </div>
+                        </div>
+                        <div id="silabus">
                             <div class="mt-3">
                                 <h6>Silabus</h6>
                                 <p>Pada Kelas ini, kamu akan mempelajari konsep dasar desain UI/UX, prospek karir, dan
@@ -155,6 +119,8 @@
                             </ul>
                             <p>+ Practice</p>
                         </div>
+                    </div>
+                    <div id="biaya">
                         <div class="row">
                             <h6>Biaya</h6>
                             <div class="col-lg-4 d-none d-lg-block">
@@ -174,7 +140,9 @@
                                 </div>
                             </div>
                         </div>
-                        <br>
+                    </div>
+                    <br>
+                    <div id="jadwal">
                         <div class="row">
                             <h6>Jadwal</h6>
                             <div class="col-lg-4 d-none d-lg-block">
@@ -202,11 +170,12 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Profil -->
+    <!-- detail -->
 
 
     <!-- cta -->
@@ -224,6 +193,7 @@
         </div>
     </section>
     <!-- cta -->
+
 
     <!-- footer -->
     <footer>
@@ -268,23 +238,22 @@
     </footer>
     <!-- footer -->
 
-    <!-- Load Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
     <script>
-        // Inisialisasi Swiper
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 'auto', // Menampilkan jumlah slide sesuai lebar layar
-            spaceBetween: 3, // Jarak antar slide (dalam pixel)
-            grabCursor: true, // Mengubah kursor menjadi tangan saat di atas slide
-            loop: true, // Mengaktifkan looping carousel
-            pagination: {
-                el: '.swiper-pagination', // Selector untuk elemen pagination
-                clickable: true, // Mengaktifkan navigasi klik pada pagination
-            }
+        document.addEventListener('DOMContentLoaded', function () {
+            var sidebarMenuLinks = document.querySelectorAll('.sidebar-menu');
+
+            sidebarMenuLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    // Menghapus class 'active' dari semua tautan sidebar
+                    sidebarMenuLinks.forEach(function (link) {
+                        link.classList.remove('active');
+                    });
+                    // Menambah class 'active' pada tautan yang diklik
+                    this.classList.add('active');
+                });
+            });
         });
     </script>
-
 </body>
 
 </html>
