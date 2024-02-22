@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Masuk</title>
+    <title>Pesanan Berhasil!</title>
 
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
 
@@ -55,43 +55,86 @@
                     <a class="nav-link" href="./faqPage.html">FaQ</a>
                     <div class="vr"></div>
                     <a class="nav-link" href="./cartPage.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                    <a class="btn btn-utama" href="./masukPage.html">Masuk</a>
-                    <a class="btn btn-outline-utama" href="./daftarPage.html">Daftar</a>
+                    <a class="nav-link" href="./profilPage.html">Profil</a>
                 </div>
             </div>
         </div>
     </nav>
     <!-- navbar -->
 
-    <!-- login -->
-    <section id="login">
+    <section id="konfirmasi">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
-                    <h1>Masuk</h1>
-                    <p>Masuk menggunakan akun yang terdaftar.</p>
+                <div class="col-lg-7">
+                    <h3><span>Selamat!</span> Kelas Berhasil Dibeli.</h3>
+                    <p>Terima kasih telah mendaftar kelas! Kelas akan aktif setelah kamu membayar dan <span>mengirimkan
+                            bukti bayar</span> ke Tim Admission untuk konfirmasi.</p>
+                    <h6>Detail Belanja</h6>
+                    <div class="card card-body">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card card-kelas">
+                                    <img src="./assets/uidesign1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">UI Design Fundamental</h5>
+                                        <p class="card-text text-secondary">Masa : 6 Bulan | Weekend</p>
+                                        <h5 class="cost">IDR 500.000</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h6>Tanggal Pembelian</h6>
+                                <p>30/01/2024, 10:00</p>
 
-                    <form action="./berandaPage.html">
-                        <label>Email</label>
-                        <input type="email" class="form-control" placeholder="Masukkan Email" required>
-                        <label>Password</label>
-                        <input type="password" class="form-control" placeholder="Masukkan Password" required>
-                        <a href="#" class="d-flex justify-content-end teks-link">Lupa password?</a>
-                        <button type="submit" class="btn btn-utama w-100 mt-5">Masuk</button>
-                    </form>
+                                <h6>Sistem Bayar</h6>
+                                <p>Bayar Lunas</p>
 
+                                <h6>Transfer Bank</h6>
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <img class="ic-bank" src="./assets/ic-sumselbabel.png" alt="">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class="rekening">
+                                            <p>Nomor Rekening</p>
+                                            <h5>0892382172</h5>
+                                            <h6>a.n Syneps Academy</h6>
+                                        </div>
+                                    </div>
+                                </div>
 
-                    <p class="mt-5">Belum punya akun? <a href="./daftarPage.html" class="teks-link">Daftar</a> </p>
-                </div>
-                <div class="col-lg-8">
-                    <div class="img-form">
-                        <img src="./assets/img-cta.png" alt="">
+                                <h6 class="mt-3">Total Pembayaran</h6>
+                                <h5 class="mb-3">IDR 500.000</h5>
+
+                                <h6>Batas Pembayaran</h6>
+                                <p>30/01/2024, 23:00</p>
+                            </div>
+                        </div>
                     </div>
+                    <a href="https://wa.me/6289633798626" target="_blank" class="btn btn-utama w-100 mt-3">Kirim Bukti
+                        Pembayaran</a>
+                    <a href="./berandaPage.html" class="d-flex justify-content-center sub mt-3"><span>Kembali ke
+                            Beranda</span></a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- login -->
+
+    <!-- cta -->
+    <section id="cta" class="bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1>Butuh informasi tambahan mengenai kelas ini?</h1>
+                    <a class="btn btn-utama mt-3 mb-5" href="#">Hubungi Kami</a>
+                </div>
+                <div class="col-lg-6 mt-2 mb-5">
+                    <img class="mt-5" src="./assets/img-cta-contact.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- cta -->
 
     <!-- footer -->
     <footer>
@@ -100,8 +143,7 @@
                 <div class="col-lg-3">
                     <img src="./assets/logo.png" alt="">
                     <p class="sub">Belajar Skill Digital Online Bersertifikat</p>
-                    <a href="https://wa.me/6289633798626" target="_blank"><i class="fa-brands fa-square-whatsapp"></i>
-                        (62) 896
+                    <a href="https://wa.me/6289633798626" target="_blank"><i class="fa-brands fa-square-whatsapp"></i> (62) 896
                         3379
                         8626</a>
                     <a href="#" target="_blank"><i class="fa-solid fa-envelope"></i> cs@sydemy.com</a>
@@ -131,13 +173,10 @@
                 </div>
                 <div class="col-lg-3">
                     <h5>Ikuti Sosial Media Kami</h5>
-                    <a href="https://instagram.com/syn_academy" target="_blank"><i
-                            class="fa-brands fa-square-instagram"></i>
+                    <a href="https://instagram.com/syn_academy" target="_blank"><i class="fa-brands fa-square-instagram"></i>
                         Instagram</a>
-                    <a href="https://www.tiktok.com/@syn_academy" target="_blank"><i class="fa-brands fa-tiktok"></i>
-                        Tiktok</a>
-                    <a href="https://www.facebook.com/synapselearningcenter" target="_blank"><i
-                            class="fa-brands fa-facebook"></i> Facebook</a>
+                    <a href="https://www.tiktok.com/@syn_academy" target="_blank"><i class="fa-brands fa-tiktok"></i> Tiktok</a>
+                    <a href="https://www.facebook.com/synapselearningcenter" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
                 </div>
             </div>
         </div>

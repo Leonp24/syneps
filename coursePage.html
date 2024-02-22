@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Kelas</title>
+
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+    <!-- bootstrap css & js -->
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/navbar.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+
+    <!-- icon fontawesome -->
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.5.1-web/css/all.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html"><img src="./assets/logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Class<i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./kelasPage.html"><b>Semua Kelas</b></a></li>
+                            <hr>
+                            <li><a class="dropdown-item" href="./kategoriPage.html">UI/UX Design</a></li>
+                            <li><a class="dropdown-item" href="./kategoriPage.html">Web Development</a></li>
+                            <li><a class="dropdown-item" href="./kategoriPage.html">Android Development</a></li>
+                            <li><a class="dropdown-item" href="./kategoriPage.html">Bahasa Asing</a></li>
+                        </ul>
+                    </div>
+                    <a class="nav-link" href="./certificationPage.html">Certification</a>
+                    <a class="nav-link" href="./aboutPage.html">About</a>
+                    <a class="nav-link" href="./faqPage.html">FaQ</a>
+                    <div class="vr"></div>
+                    <a class="nav-link" href="./cartPage.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="nav-link" href="./profilPage.html">Profil</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+
+    <section id="course">
+        <div class="container">
+            <p class="title">Kelas Saya</p>
+            <h3 class="nama-kelas mb-3">UI Design Fundamental</h3>
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- video kelas -->
+                    <div id="videoContainer">
+                        <iframe id="youtubeVideo" width="100%" height="500px" src="" frameborder="0"
+                            allowfullscreen></iframe>
+                    </div>
+
+                    <!-- judul video & deskripsi -->
+                    <div class="deskripsi-video mt-3">
+                        <h5>Apa itu UI & UX Design - Part 1</h5>
+                        <p>Dalam video ini, kamu akan mengetahui pengertian, perbedaan, dan contoh dari UI & UX</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Konten Kelas</h5>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <h6>Berkenalan dengan UI & UX</h6>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>
+                                            <a href="./coursePage.html" class="konten" id="video1">Apa itu UI & UX
+                                                Design - Part
+                                                1</a>
+                                        </li>
+                                        <li>
+                                            <a href="./coursePage.html" class="konten" id="video2">Apa itu UI & UX
+                                                Design - Part
+                                                2</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <h6>Pengenalan UX Research</h6>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li><a href="./coursePage.html" class="konten" id="video3">Apa itu UX
+                                                Research?</a></li>
+                                        <li><a href="./coursePage.html" class="konten" id="video4">Membuat Online
+                                                Survey</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <h6>Pengenalan Design Thinking</h6>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>
+                                            <a href="./coursePage.html" class="konten" id="video5">Apa itu Design
+                                                Thinking</a>
+                                        </li>
+                                        <li>
+                                            <a href="./coursePage.html" class="konten" id="video6">Praktek Design
+                                                Thinking</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <h6>Pengenalan Figma</h6>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>
+                                            <a href="./coursePage.html" class="konten" id="video7">Belajar Figma Pemula
+                                                - Part 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="./coursePage.html" class="konten" id="video8">Belajar Figma Pemula
+                                                - Part 2</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <h6>Userflow & Site Mapping</h6>
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>
+                                            <a href="./coursePage.html" class="konten" id="video9">Pengenalan Userflow &
+                                                Sitemapping</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    <h6>Mengenal Design System</h6>
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>
+                                            <a href="./coursePage.html" class="konten" id="video10">Apa itu Design
+                                                System?</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    <h6>Wireframing</h6>
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>
+                                            <a href="./coursePage.html" class="konten" id="video11">Belajar Wireframing
+                                                Pemula - Part
+                                                1</a>
+                                        </li>
+                                        <li>
+                                            <a href="./coursePage.html" class="konten" id="video12">Belajar Wireframing
+                                                Pemula - Part
+                                                2</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    <h6>UI Design</h6>
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>
+                                            <a href="./coursePage.html" class="konten" id="video13">Belajar Desain UI
+                                                Pemula - Part
+                                                1</a>
+                                        </li>
+                                        <li>
+                                            <a href="./coursePage.html" class="konten" id="video14">Belajar Desain UI
+                                                Pemula - Part
+                                                2</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    // Menampilkan video pertama saat dokumen dimuat
+                    showVideo('video1');
+                    // Mendengarkan klik pada setiap .konten
+                    let kontenLinks = document.querySelectorAll('.konten');
+                    kontenLinks.forEach(function (link) {
+                        link.addEventListener('click', function (event) {
+                            event.preventDefault();
+                            // Mengambil ID konten yang diklik
+                            let videoId = event.target.id;
+                            // Menampilkan video yang sesuai berdasarkan ID konten yang diklik
+                            showVideo(videoId);
+                        });
+                    });
+                });
+
+                function showVideo(videoId) {
+                    // Menentukan URL video YouTube berdasarkan ID konten
+                    let videoUrl;
+                    switch (videoId) {
+                        case 'video1':
+                            videoUrl = 'https://www.youtube.com/embed/NFchQolpAxs?si=G-BEKf-OAPnZODK0';
+                            break;
+                        case 'video2':
+                            videoUrl = 'https://www.youtube.com/embed/gNGCIIaLFbY?si=oSdClAAk-fidDvHe';
+                            break;
+                        case 'video3':
+                            videoUrl = 'https://www.youtube.com/embed/BzXq9ho3KJU?si=I8U9U-BNMIapprKF';
+                            break;
+                        case 'video4':
+                            videoUrl = 'https://www.youtube.com/embed/gfFvZGetoVU?si=WGP_oRS3RGBALrbI';
+                            break;
+                        case 'video5':
+                            videoUrl = 'https://www.youtube.com/embed/wp_b1x0Z2jE?si=SBIuDYRNB988jOtc';
+                            break;
+                        case 'video6':
+                            videoUrl = 'https://www.youtube.com/embed/twvztEmfnm4?si=4HOaHHm1xTkscG8d';
+                            break;
+                        case 'video7':
+                            videoUrl = 'https://www.youtube.com/embed/tGNyY74RYzE?si=zQAo4Y7HbfPykRZK';
+                            break;
+                        case 'video8':
+                            videoUrl = 'https://www.youtube.com/embed/yjA5VfTy-1o?si=JNzxyEFMGgWuy51X';
+                            break;
+                        case 'video9':
+                            videoUrl = 'https://www.youtube.com/embed/shk5JYnI9Rw?si=Ck1OYCMQBoBEFfCz';
+                            break;
+                        case 'video10':
+                            videoUrl = 'https://www.youtube.com/embed/TuTVrQ1wazk?si=gfkOEWiMHiB_31MA';
+                            break;
+                        case 'video11':
+                            videoUrl = 'https://www.youtube.com/embed/77zdoMjIAOE?si=TPz8CEpoG4E5UsHD';
+                            break;
+                        case 'video12':
+                            videoUrl = 'https://www.youtube.com/embed/fRGQhbUG_og?si=SbVMKiaEEm5GuRQo';
+                            break;
+                        case 'video13':
+                            videoUrl = 'https://www.youtube.com/embed/C42Kmc2n5W8?si=KK24Z2oRCYugxhi1';
+                            break;
+                        case 'video14':
+                            videoUrl = 'https://www.youtube.com/embed/J_s7K06PhJ0?si=o7XITJQM5ZbK99U3';
+                            break;
+                    }
+                    // Menetapkan URL video ke iframe
+                    let youtubeVideo = document.getElementById('youtubeVideo');
+                    youtubeVideo.src = videoUrl;
+                }
+
+            </script>
+
+            <!-- forum -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5>Forum</h5>
+                    <div id="comments"></div>
+                    <button id="clearCommentsBtn" class="btn btn-danger mt-3 mb-3">Hapus Semua Komentar</button>
+                    <p class="text-secondary">*sifat button hapus ini sementara, hanya untuk uji coba</p>
+                    <script>
+                        function addComment(name, comment) {
+                            let commentContainer = document.getElementById('comments');
+                            let newComment = document.createElement('div');
+                            newComment.innerHTML = '<strong>' + name + ':</strong> ' + comment + '<button class="reply-btn btn btn-utama mt-3">Balas</button><div class="reply" style="display:none; width: 130px !important;"></div>';
+                            commentContainer.appendChild(newComment); // Menggunakan appendChild() untuk memastikan komentar baru muncul di bawah komentar yang sudah ada
+                            saveCommentsToStorage(); // Simpan komentar ke localStorage setiap kali komentar ditambahkan
+                        }
+
+                        function saveCommentsToStorage() {
+                            let comments = document.getElementById('comments').innerHTML;
+                            localStorage.setItem('comments', comments); // Simpan komentar ke localStorage
+                        }
+
+                        function loadCommentsFromStorage() {
+                            let comments = localStorage.getItem('comments');
+                            if (comments) {
+                                document.getElementById('comments').innerHTML = comments; // Tampilkan komentar dari localStorage saat halaman dimuat kembali
+                            }
+                        }
+
+                        function clearComments() {
+                            localStorage.removeItem('comments'); // Hapus komentar dari localStorage
+                            document.getElementById('comments').innerHTML = ''; // Hapus komentar dari tampilan
+                        }
+
+                        document.addEventListener('DOMContentLoaded', function () {
+                            loadCommentsFromStorage(); // Muat komentar dari localStorage saat halaman dimuat kembali
+
+                            document.getElementById('commentForm').addEventListener('submit', function (event) {
+                                event.preventDefault();
+                                let name = document.getElementById('name').value;
+                                let comment = document.getElementById('comment').value;
+                                addComment(name, comment);
+                                document.getElementById('commentForm').reset();
+                            });
+
+                            document.getElementById('comments').addEventListener('click', function (event) {
+                                if (event.target.classList.contains('reply-btn')) {
+                                    let replyBox = event.target.nextElementSibling;
+                                    if (replyBox.style.display === 'none') {
+                                        replyBox.innerHTML = '<textarea class="reply-textarea form-control mb-3 mt-3" placeholder="Ketika Balasan" rows="4" cols="100"></textarea><button class="send-reply-btn btn btn-utama" style="width:130px;">Kirim Balasan</button>';
+                                        replyBox.style.display = 'block';
+                                    } else {
+                                        replyBox.innerHTML = '';
+                                        replyBox.style.display = 'none';
+                                    }
+                                }
+
+                                if (event.target.classList.contains('send-reply-btn')) {
+                                    let name = document.getElementById('name').value;
+                                    let replyText = event.target.previousElementSibling.value;
+                                    let replyComment = '<strong>' + name + ' (Balasan):</strong> ' + replyText;
+                                    let replyContainer = event.target.parentNode;
+                                    let newReply = document.createElement('div');
+                                    newReply.innerHTML = replyComment;
+                                    replyContainer.parentNode.insertBefore(newReply, replyContainer.nextElementSibling);
+                                    event.target.previousElementSibling.value = '';
+                                    replyContainer.innerHTML = '';
+                                    replyContainer.style.display = 'none';
+                                    saveCommentsToStorage(); // Simpan komentar ke localStorage setelah balasan dikirim
+                                }
+                            });
+
+                            document.getElementById('clearCommentsBtn').addEventListener('click', function () {
+                                clearComments(); // Panggil fungsi untuk menghapus semua komentar
+                            });
+                        });
+                    </script>
+
+                    <form id="commentForm">
+                        <label class="sub" for="name">Nama:</label><br>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Masukkan Nama"><br>
+                        <label class="sub" for="comment">Komentar:</label><br>
+                        <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Ketik Komentar"
+                            class="form-control"></textarea><br>
+                        <button type="submit" class="btn btn-utama w-100">Kirim Komentar</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- cta -->
+    <section id="cta" class="bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1>Butuh informasi tambahan mengenai kelas ini?</h1>
+                    <a class="btn btn-utama mt-3 mb-5" href="#">Hubungi Kami</a>
+                </div>
+                <div class="col-lg-6 mt-2 mb-5">
+                    <img class="mt-5" src="./assets/img-cta-contact.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- cta -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <img src="./assets/logo.png" alt="">
+                    <p class="sub">Belajar Skill Digital Online Bersertifikat</p>
+                    <a href="https://wa.me/6289633798626" target="_blank"><i class="fa-brands fa-square-whatsapp"></i>
+                        (62) 896
+                        3379
+                        8626</a>
+                    <a href="#" target="_blank"><i class="fa-solid fa-envelope"></i> cs@sydemy.com</a>
+                    <a href="https://maps.app.goo.gl/p5BFi3kNApcwSbJc9" target="_blank"><i
+                            class="fa-solid fa-location-dot"></i>
+                        Komplek Rajawali Village, Jl. Rajawali No.1228, 9 Ilir, Ilir Timur II, Kota Palembang, Sumatera
+                        Selatan
+                        30114</a>
+                </div>
+                <div class="col-lg-3">
+                    <div class="kelas-foot">
+                        <h5>Kelas</h5>
+                        <a href="./kategoriPage.html">Semua Kelas</a>
+                        <a class="sub" href="./detailPage.html">Kelas UI/UX</a>
+                        <a class="sub" href="./detailPage.html">Kelas Web Development</a>
+                        <a class="sub" href="./detailPage.html">Kelas Android Development</a>
+                        <a class="sub" href="./detailPage.html">Kelas Digital Marketing</a>
+                        <a class="sub" href="./detailPage.html">Kelas Data Analytic</a>
+                        <a class="sub" href="./detailPage.html">Kelas Bahasa Asing</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Bantuan</h5>
+                    <a href="./aboutPage.html">Tentang Kami</a>
+                    <a href="./faqPage.html">FaQ</a>
+                    <a href="https://wa.me/6289633798626" target="_blank">Hubungi Kami</a>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Ikuti Sosial Media Kami</h5>
+                    <a href="https://instagram.com/syn_academy" target="_blank"><i
+                            class="fa-brands fa-square-instagram"></i>
+                        Instagram</a>
+                    <a href="https://www.tiktok.com/@syn_academy" target="_blank"><i class="fa-brands fa-tiktok"></i>
+                        Tiktok</a>
+                    <a href="https://www.facebook.com/synapselearningcenter" target="_blank"><i
+                            class="fa-brands fa-facebook"></i> Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+</body>
+
+</html>
