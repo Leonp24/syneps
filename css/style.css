@@ -180,6 +180,7 @@
 /* keranjang */
 #keranjang {
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 #keranjang .sub {
     cursor: pointer;
@@ -213,6 +214,12 @@
 #login .img-form img{
     width: 80%;
 }
+#login form label {
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
 
 /* login */
 
@@ -229,14 +236,57 @@
     width: 80%;
     margin-top: 10%;
 }
-
+#daftar form label {
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
 /* daftar */
 
 /* bayar */
 #bayar {
     margin-top: 100px;
+    margin-bottom: 120px;
+}
+#bayar .form-check img {
+    width: 120px;
+}
+#bayar .info-user label {
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+#bayar .detail-bayar .card {
+    padding: 30px;
+}
+#bayar .kelas .card {
+    border-radius: 10px;
 }
 /* bayar */
+
+/* konfirmasi */
+#konfirmasi {
+    margin-top: 100px;
+}
+#konfirmasi .card-body {
+    padding: 30px;
+}
+#konfirmasi .card-kelas {
+    border-radius: 10px;
+}
+#konfirmasi .card .ic-bank {
+    width: 100%;
+    object-fit: fill;
+}
+#konfirmasi .rekening {
+    line-height: 5px;
+}
+#konfrimasi .card .card-sub {
+    margin-top: 100px;
+}
+/* konfirmasi */
 
 /* detail */
 #detail {
@@ -247,7 +297,7 @@
 }
 #detail .fixed-side {
     position: fixed;
-    width: 200px;
+    width: 156px;
 }
 #detail .fixed-side {
     text-align: center;
@@ -284,6 +334,131 @@
 }
 /* cta */
 
+/* profi; */
+#profil {
+    margin-top: 100px;
+}
+#profil .card-menu {
+    padding: 10px;
+}
+#profil .nav .active {
+    background-color: #2ECC71;
+}
+#profil .nav-link {
+    margin: 10px;
+}
+#profil .nav-link:hover {
+    color: #1a5c36;
+}
+#profil .title {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+#profil .card-info {
+    padding: 30px;
+}
+#profil h4 {
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+#profil .modal-body label {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#profil .status-lunas {
+    background-color: #4bff9659;
+    color: #1a5c36;
+}
+#profil .status-pending {
+    background-color: #deff4b57;
+    color: #8b6b10;
+}
+#profil .card-riwayat {
+    padding: 30px;
+}
+#profil .card-kelas {
+    border-radius: 10px;
+}
+#profil .card-kelas .card-title {
+    text-decoration: none;
+}
+#profil .card-kelas .card-title:hover {
+    text-decoration: underline #2ECC71;
+}
+#profil .card-kelas .pass{
+    color: #2ECC71;
+}
+#profil .card-kelas .pass i{
+    color: #2ECC71;
+}
+#profil .card-kelas .proses{
+    color: #FFD700;
+}
+#profil .card-kelas .proses i{
+    color: #FFD700;
+}
+#profil .card-sertif {
+    padding: 10px;
+}
+#profil .card-sertif .download{
+    display: flex;
+    justify-content: end;
+}
+#profil .card-sertif .download .btn {
+    width: 50%;
+}
+#profil .card-sertif .pass{
+    color: #2ECC71;
+}
+#profil .card-sertif .pass i{
+    color: #2ECC71;
+}
+#profil .card-sertif .proses{
+    color: #FFD700;
+}
+#profil .card-sertif .proses i{
+    color: #FFD700;
+}
+/* profil */
+
+/* course */
+#course {
+    margin-top: 100px;
+}
+#course .title {
+    text-transform: uppercase;
+    color: grey;
+    letter-spacing: 5px;
+
+}
+#course .nama-kelas {
+    margin-top: -10px;
+}
+#course .video-kelas {
+    width: 100%;
+    height: 500px;
+}
+#course .konten {
+    text-decoration: none;
+    color: #0E2D41;
+    display: block;
+    margin: 5px;
+}
+#course .konten:hover {
+    text-decoration: underline #2ECC71;
+}
+#course #comments {
+    margin-bottom: 20px;
+}
+#course .reply {
+    margin-left: 20px;
+}
+#course .reply-textarea {
+    width: 100%; 
+    height: 100px;
+}
+/* course */
+
 /* footer */
 footer {
     margin-top: 50px;
@@ -311,8 +486,5 @@ footer a:hover {
 }
 footer .kelas-foot {
     margin-left: 10%;
-}
-#footer-page{
-    margin-top: 50vh;
 }
 /* footer */

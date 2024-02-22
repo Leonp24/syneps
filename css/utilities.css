@@ -93,10 +93,4 @@ span {
     color: #2ECC71;
     text-decoration: underline;
 }
-label {
-    font-size: 14px;
-    font-weight: 600;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
 /* utilities */
