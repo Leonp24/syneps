@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Profil</title>
+
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+    <!-- bootstrap css & js -->
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/navbar.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+
+    <!-- icon fontawesome -->
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.5.1-web/css/all.css">
+
+    <!-- Load Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html"><img src="./assets/logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Class<i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./kelasPage.html"><b>Semua Kelas</b></a></li>
+                            <hr>
+                            <li><a class="dropdown-item" href="./kategoriPage.html">UI/UX Design</a></li>
+                            <li><a class="dropdown-item" href="./kategoriPage.html">Web Development</a></li>
+                            <li><a class="dropdown-item" href="./kategoriPage.html">Android Development</a></li>
+                            <li><a class="dropdown-item" href="./kategoriPage.html">Bahasa Asing</a></li>
+                        </ul>
+                    </div>
+                    <a class="nav-link" href="./certificationPage.html">Certification</a>
+                    <a class="nav-link" href="./aboutPage.html">About</a>
+                    <a class="nav-link" href="./faqPage.html">FaQ</a>
+                    <div class="vr"></div>
+                    <a class="nav-link" href="./cartPage.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="nav-link" href="#">Profil</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+
+    <section id="profil">
+        <div class="container">
+            <h3 class="mb-3">Profil</h3>
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="d-flex align-items-start">
+                        <div class="nav card card-menu flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <button class="nav-link active" id="v-pills-info-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-info" type="button" role="tab" aria-controls="v-pills-info"
+                                aria-selected="true">Informasi Saya</button>
+                            <button class="nav-link" id="v-pills-riwayat-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-riwayat" type="button" role="tab"
+                                aria-controls="v-pills-riwayat" aria-selected="false">Riwayat Belanja</button>
+                            <button class="nav-link" id="v-pills-kelas-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-kelas" type="button" role="tab" aria-controls="v-pills-kelas"
+                                aria-selected="false">Kelas</button>
+                            <button class="nav-link" id="v-pills-esertif-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-esertif" type="button" role="tab"
+                                aria-controls="v-pills-esertif" aria-selected="false">E-Sertifikat</button>
+                            <!-- trigger modal -->
+                            <button data-bs-toggle="modal" data-bs-target="#logoutModal"
+                                class="btn text-danger mt-3 mb-3">Log
+                                Out</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-info" role="tabpanel"
+                            aria-labelledby="v-pills-info-tab" tabindex="0">
+                            <div class="card card-info">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <p class="title">nama lengkap</p>
+                                        <h4>Adam Santoso</h4>
+                                        <p class="title">nomor telepon</p>
+                                        <h4>08123456789</h4>
+                                        <p class="title">Email</p>
+                                        <h4>adam@gmail.com</h4>
+                                        <p class="title">pekerjaan</p>
+                                        <p>belum ada data</p>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <p class="title">tanggal lahir</p>
+                                        <p>belum ada data</p>
+                                        <p class="title">usia</p>
+                                        <p>belum ada data</p>
+                                        <p class="title">provinsi</p>
+                                        <p>belum ada data</p>
+                                        <p class="title">kota</p>
+                                        <p>belum ada data</p>
+                                    </div>
+                                    <div class="col-lg-2">
+                                        <!-- trigger modal edit -->
+                                        <button data-bs-toggle="modal" data-bs-target="#editModal"
+                                            class="btn btn-outline-utama">Edit Data</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-riwayat" role="tabpanel"
+                            aria-labelledby="v-pills-riwayat-tab" tabindex="0">
+                            <div class="card card-riwayat">
+                                <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th>No.</th>
+                                        <th>Kelas</th>
+                                        <th>Harga</th>
+                                        <th>Status</th>
+                                        <th>Tanggal</th>
+                                        <th></th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>1</td>
+                                        <td>Kelas Membuat Website Dari Nol</td>
+                                        <td>Rp. 99.999</td>
+                                        <td class="status-lunas">Lunas</td>
+                                        <td>22 Februari 2024</td>
+                                        <td><a href="./cekPembayaran.html" class="btn btn-utama">Cek Detail</a></td>
+                                      </tr>
+                                      <tr>
+                                        <td>2</td>
+                                        <td>Kelas Membuat Website Dari Nol</td>
+                                        <td>Rp. 99.999</td>
+                                        <td class="status-lunas">Lunas</td>
+                                        <td>22 Februari 2024</td>
+                                        <td><a href="./cekPembayaran.html" class="btn btn-utama">Cek Detail</a></td>
+                                      </tr>
+                                      <tr>
+                                        <td>3</td>
+                                        <td>Kelas Membuat Website Dari Nol</td>
+                                        <td>Rp. 99.999</td>
+                                        <td class="status-lunas">Lunas</td>
+                                        <td>22 Februari 2024</td>
+                                        <td><a href="./cekPembayaran.html" class="btn btn-utama">Cek Detail</a></td>
+                                      </tr>
+                                      <tr>
+                                        <td>4</td>
+                                        <td>Kelas Membuat Website Dari Nol</td>
+                                        <td>Rp. 99.999</td>
+                                        <td class="status-pending">Belum Bayar</td>
+                                        <td>22 Februari 2024</td>
+                                        <td><a href="./cekPembayaran.html" class="btn btn-utama">Cek Detail</a></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-kelas" role="tabpanel"
+                            aria-labelledby="v-pills-kelas-tab" tabindex="0">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="card card-kelas">
+                                      <img src="./assets/uidesign1.png" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <a href="./coursePage.html" class="card-title"><h5>UI Design Fundamental</h5></a>
+                                        <p class="pass sub"><i class="fa-solid fa-circle-check me-2"></i> Selesai</p>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="card card-kelas">
+                                      <img src="./assets/bahasa.png" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <a href="./coursePage.html" class="card-title"><h5>English Beginner Class</h5></a>
+                                        <p class="pass sub"><i class="fa-solid fa-circle-check me-2"></i> Selesai</p>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="card card-kelas">
+                                      <img src="./assets/programming.png" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <a href="./coursePage.html" class="card-title"><h5>Fullstack Web Developer</h5></a>
+                                        <p class="proses sub"><i class="fa-solid fa-spinner me-2"></i> Dalam Proses Belajar</p>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-esertif" role="tabpanel"
+                            aria-labelledby="v-pills-esertif-tab" tabindex="0">
+                            <div class="card card-sertif">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h5 class="cart-title">UI Design Fundamental</h5>
+                                        <p class="pass sub"><i class="fa-solid fa-circle-check me-2"></i> Selesai</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="download">
+                                            <a href="#" class="btn btn-utama">Download E-Sertifikat</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card card-sertif mt-3">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <h5 class="cart-title">English Beginner Class</h5>
+                                        <p class="pass sub"><i class="fa-solid fa-circle-check me-2"></i> Selesai</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="download">
+                                            <a href="#" class="btn btn-utama">Download E-Sertifikat</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Modal logout -->
+        <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h5>Yakin ingin Log Out?</h5>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn sub text-danger">Yakin</button>
+                        <button type="button" class="btn btn-utama" data-bs-dismiss="modal">Batal</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal edit -->
+        <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Edit Data</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                           <div class="row">
+                            <div class="col-lg-6">
+                                <label class="title">nama lengkap</label>
+                                <input placeholder="Masukkan Nama Lengkap" class="form-control" type="text">
+                                <label class="title">nomor telepon</label>
+                                <input placeholder="Masukkan Nomor Telepon" class="form-control" type="text">
+                                <label class="title">Email</label>
+                                <input placeholder="Masukkan Email" class="form-control" type="email">
+                                <label class="title">pekerjaan</label>
+                                <input placeholder="Masukkan Pekerjaan" class="form-control" type="text">
+                            </div>
+                            <div class="col-lg-6">
+                                <label class="title">tanggal lahir</label>
+                                <input class="form-control" type="date">
+                                <label class="title">usia</label>
+                                <input placeholder="Masukkan Usia" class="form-control" type="text">
+                                <label class="title">provinsi</label>
+                                <input placeholder="Masukkan Provinsi" class="form-control" type="text">
+                                <label class="title">kota</label>
+                                <input placeholder="Masukkan Kota" class="form-control" type="text">
+                            </div>
+                           </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn text-danger me-3" data-bs-dismiss="modal">Batal</button>
+                        <button type="button" class="btn btn-utama">Simpan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- cta -->
+    <section id="cta" class="bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <h1>Sudah siap untuk jadi <br> bagian revolusi digital?</h1>
+                    <a class="btn btn-utama mt-3" href="./masukPage.html">Daftar Kelas</a>
+                </div>
+                <div class="col-lg-7">
+                    <img src="./assets/img-cta.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- cta -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <img src="./assets/logo.png" alt="">
+                    <p class="sub">Belajar Skill Digital Online Bersertifikat</p>
+                    <a href="https://wa.me/6289633798626" target="_blank"><i class="fa-brands fa-square-whatsapp"></i>
+                        (62) 896
+                        3379
+                        8626</a>
+                    <a href="#" target="_blank"><i class="fa-solid fa-envelope"></i> cs@sydemy.com</a>
+                    <a href="https://maps.app.goo.gl/p5BFi3kNApcwSbJc9" target="_blank"><i
+                            class="fa-solid fa-location-dot"></i>
+                        Komplek Rajawali Village, Jl. Rajawali No.1228, 9 Ilir, Ilir Timur II, Kota Palembang,
+                        Sumatera
+                        Selatan
+                        30114</a>
+                </div>
+                <div class="col-lg-3">
+                    <div class="kelas-foot">
+                        <h5>Kelas</h5>
+                        <a href="./kategoriPage.html">Semua Kelas</a>
+                        <a class="sub" href="./detailPage.html">Kelas UI/UX</a>
+                        <a class="sub" href="./detailPage.html">Kelas Web Development</a>
+                        <a class="sub" href="./detailPage.html">Kelas Android Development</a>
+                        <a class="sub" href="./detailPage.html">Kelas Digital Marketing</a>
+                        <a class="sub" href="./detailPage.html">Kelas Data Analytic</a>
+                        <a class="sub" href="./detailPage.html">Kelas Bahasa Asing</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Bantuan</h5>
+                    <a href="./aboutPage.html">Tentang Kami</a>
+                    <a href="./faqPage.html">FaQ</a>
+                    <a href="https://wa.me/6289633798626" target="_blank">Hubungi Kami</a>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Ikuti Sosial Media Kami</h5>
+                    <a href="https://instagram.com/syn_academy" target="_blank"><i
+                            class="fa-brands fa-square-instagram"></i>
+                        Instagram</a>
+                    <a href="https://www.tiktok.com/@syn_academy" target="_blank"><i class="fa-brands fa-tiktok"></i>
+                        Tiktok</a>
+                    <a href="https://www.facebook.com/synapselearningcenter" target="_blank"><i
+                            class="fa-brands fa-facebook"></i> Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+</body>
+
+</html>

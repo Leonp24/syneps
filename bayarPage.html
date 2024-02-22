@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Check Out Kelas</title>
 
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
     <!-- bootstrap css & js -->
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
     <script src="./js/bootstrap.bundle.js"></script>
@@ -53,7 +55,7 @@
                     <a class="nav-link" href="./faqPage.html">FaQ</a>
                     <div class="vr"></div>
                     <a class="nav-link" href="./cartPage.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                    <a class="nav-link" href="#">Profil</a>
+                    <a class="nav-link" href="./profilPage.html">Profil</a>
                 </div>
             </div>
         </div>
@@ -65,8 +67,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-9">
-                    <h3>Detail Pembayaran</h3>
-                    <h6>Informasi Saya</h6>
+                    <div class="detail-bayar">
+                        <h3>Detail Pembayaran</h3>
+                        <h6>Informasi Saya</h6>
 
                     <form action="">
                         <label for="email">Email</label>
@@ -88,6 +91,52 @@
                                 <label class="form-check-label" for="inlineRadio2">Angsuran</label>
                               </div>
                         </form>
+
+                        <h6 class="mt-5">Pembayaran</h6>
+                        <div class="card">
+                            <form action="">
+                                <p class="sub">Sistem Bayar</p>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1" required>
+                                    <label class="form-check-label" for="inlineRadio1">Bayar Lunas</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2" required>
+                                    <label class="form-check-label" for="inlineRadio2">Angsuran</label>
+                                </div>
+                            </form>
+                            <form action="">
+                                <p class="sub mt-3">Transfer Bank</p>
+                                <p><span>*Pilih satu rekening bank tujuan</span></p>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1" required>
+                                    <label class="form-check-label" for="inlineRadio1"><img
+                                            src="./assets/ic-sumselbabel.png" alt=""></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option2" required>
+                                    <label class="form-check-label" for="inlineRadio2"><img src="./assets/ic-bsi.png"
+                                            alt=""></label>
+                                </div>
+                            </form>
+                        </div>
+                        <a href="./konfirmasiPage.html" class="btn btn-utama w-100 mt-3">Konfirmasi</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="kelas">
+                        <div class="card">
+                            <img src="./assets/uidesign1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">UI Design Fundamental</h5>
+                                <p class="card-text text-secondary">Masa : 6 Bulan | Weekend</p>
+                                <h5 class="cost">IDR 500.000</h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -96,13 +145,14 @@
     <!-- bayar -->
 
     <!-- footer -->
-    <footer id="footer-page">
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
                     <img src="./assets/logo.png" alt="">
                     <p class="sub">Belajar Skill Digital Online Bersertifikat</p>
-                    <a href="wa.me/6289633798626" target="_blank"><i class="fa-brands fa-square-whatsapp"></i> (62) 896
+                    <a href="https://wa.me/6289633798626" target="_blank"><i class="fa-brands fa-square-whatsapp"></i>
+                        (62) 896
                         3379
                         8626</a>
                     <a href="#" target="_blank"><i class="fa-solid fa-envelope"></i> cs@sydemy.com</a>
@@ -128,13 +178,17 @@
                     <h5>Bantuan</h5>
                     <a href="./aboutPage.html">Tentang Kami</a>
                     <a href="./faqPage.html">FaQ</a>
-                    <a href="wa.me/6289633798626">Hubungi Kami</a>
+                    <a href="https://wa.me/6289633798626" target="_blank">Hubungi Kami</a>
                 </div>
                 <div class="col-lg-3">
                     <h5>Ikuti Sosial Media Kami</h5>
-                    <a href="intagram.com/syn_academy"><i class="fa-brands fa-square-instagram"></i> Instagram</a>
-                    <a href="tiktok.com/syn_academy"><i class="fa-brands fa-tiktok"></i> Tiktok</a>
-                    <a href="facebook.com/synapseacademy"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                    <a href="https://instagram.com/syn_academy" target="_blank"><i
+                            class="fa-brands fa-square-instagram"></i>
+                        Instagram</a>
+                    <a href="https://www.tiktok.com/@syn_academy" target="_blank"><i class="fa-brands fa-tiktok"></i>
+                        Tiktok</a>
+                    <a href="https://www.facebook.com/synapselearningcenter" target="_blank"><i
+                            class="fa-brands fa-facebook"></i> Facebook</a>
                 </div>
             </div>
         </div>
