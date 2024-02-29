@@ -261,6 +261,11 @@
 #bayar .kelas .card {
     border-radius: 10px;
 }
+#bayar form .form-label {
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 15px;
+}
 /* bayar */
 
 /* konfirmasi */
