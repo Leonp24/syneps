@@ -297,9 +297,55 @@
 
     /* daftar */
 
+    /* profil */
+
+    #profil .card-info {
+        margin-top: 30px;
+    }
+
+    #profil .card-riwayat {
+        margin-top: 30px;
+    }
+    
+    #profil .card-kelas {
+        margin-top: 30px;
+    }
+    
+    #profil .card-sertif {
+        margin-top: 30px;
+    }
+
+    #profil .card-riwayat {
+        align-items: center;
+        padding: 5px;
+    }
+
+    #profil .card-riwayat .table  thead th {
+        padding-left: 0px;
+        margin-left: 0px;
+        padding-right: 0px;
+    }
+    
+    #profil .card-riwayat .table  tbody tr td {
+        padding-left: 0px;
+        margin-left: 0px;
+        margin-right: 100px;
+        padding-right: 5px;
+    }
+
+    #profil .card-riwayat a {
+        width: 50px;
+    }
+
+    /* profil */
+
     /* bayar */
     #bayar {
         margin-top: 100px;
+    }
+
+    #bayar .kelas {
+        margin-top: 15px;
     }
 
     /* bayar */
@@ -355,7 +401,25 @@
     #jadwal .card {
         margin-bottom: 10px;
     }
+
+    #konfirmasi .card {
+        margin-bottom: 20px;
+    }
+    
+    #konfirmasi .ic-bank {
+        padding-right: 200px;
+        width: 50%;
+        margin-bottom: 20px;
+    }
     /* detail */
+
+    /* course */
+
+    #course .accordion {
+        margin-bottom: 20px;
+    }
+
+    /* course */
 
     /* cta */
     #cta {
